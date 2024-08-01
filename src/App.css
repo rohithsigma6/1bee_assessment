@@ -1,0 +1,121 @@
+
+.app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.email-list {
+  width: 30%;
+  max-width: 33%; 
+  overflow: hidden;
+  -ms-overflow-style: none; 
+}
+.email-list::-webkit-scrollbar {
+  display: none; 
+}
+
+.email-detail {
+  width: 70%;
+  padding: 20px;
+  overflow-y: auto;
+  margin-left: 5%;
+  height: 100px;
+}
+
+.email-list, .email-detail {
+  flex: 1;
+  overflow-y: auto;
+}
+
+
+.email-detail {
+  padding: 20px;
+  border: 1px solid #cfd2dc;
+  margin-top: 70px;
+  width: 700px;
+  height: auto;
+}
+
+.email-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.email-item:hover {
+  background-color: #f5f5f5;
+}
+
+.email-item.read {
+  background-color: #f9f9f9;
+}
+
+.email-item.unread {
+  font-weight: bold;
+}
+
+.email-item .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e54065;
+  color: white;
+ margin-top: -50px;
+ font-size: 28px;
+ 
+}
+
+.email-item .email-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-item .email-info p {
+  margin: 0;
+  padding: 2px 0;
+}
+
+.email-item .time {
+  font-size: 12px;
+  color: #888;
+}
+
+.email-detail h2 {
+  margin-top: 0;
+}
+
+.email-detail p {
+  margin: 5px 0;
+}
+
+.email-detail .favorite-button {
+  background-color: #e54065;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.email-detail .favorite-button:hover {
+  background-color: #e54065;
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.filter-bar button {
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+

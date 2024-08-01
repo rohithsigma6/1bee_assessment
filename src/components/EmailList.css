@@ -1,0 +1,16 @@
+.email-container {
+    display: flex;
+    width: 300px;
+    border: none;
+  }
+  
+ 
+  .email-detail{
+    padding: 20px;
+    display: block;
+  }
+  
+  .email-container.full-width .email-detail {
+    display: none;
+  }
+  
